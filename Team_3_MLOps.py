@@ -5,8 +5,8 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 from PIL import Image
-import locale
 import joblib
+# import locale
 
 #load the model from disk
 filename = "catb_model_24outbaski.sav"
@@ -495,8 +495,9 @@ if add_selectbox == "Online":
 
         st.markdown("<h3></h3>", unsafe_allow_html=True)
         result_value = locale.format("%d",prediction_df['Prediction'][0], grouping=True)
-        st.success(result_value, icon="💰")
+        # st.success(result_value, icon="💰")
         # st.success(prediction_df["Prediction"][0])
+        st.write('$', prediction_df["Prediction"][0])
 
 else:
     st.subheader("Dataset upload")
