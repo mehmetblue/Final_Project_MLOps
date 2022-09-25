@@ -497,7 +497,7 @@ if add_selectbox == "Online":
         # result_value = locale.format("%d",prediction_df['Prediction'][0], grouping=True)
         # st.success(result_value, icon="💰")
         # st.success(prediction_df["Prediction"][0])
-        st.write('$', prediction_df["Prediction"][0])
+        st.write('$', round(prediction_df["Prediction"][0]))
 
 else:
     st.subheader("Dataset upload")
