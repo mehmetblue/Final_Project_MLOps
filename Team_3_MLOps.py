@@ -23,7 +23,7 @@ The application is functional for both online prediction and batch data predicti
 st.markdown("<h3></h3>", unsafe_allow_html=True)
 
 #Setting Application sidebar default
-image = Image.open("D:\\infoTech\\week_30_final_project\\streamlit\\App.png")
+image = Image.open("App.png")
 add_selectbox = st.sidebar.selectbox(
 "How would you like to predict?", ("Online", "Batch"))
 st.sidebar.info('This app is created to predict Developers Salaries based on Stack Overflow 2018 Developers Survey')
