@@ -486,7 +486,7 @@ if add_selectbox == "Online":
     for j in column_list_to_map:
         features_df[j] = pd.to_numeric(features_df[j], downcast='float')
 
-    locale.setlocale(locale.LC_ALL, 'en_US')
+    # locale.setlocale(locale.LC_ALL, 'en_US')
 
     if st.button('Predict'):
         prediction = model.predict(features_df)
@@ -494,7 +494,7 @@ if add_selectbox == "Online":
         prediction_df = pd.DataFrame(prediction, columns=["Prediction"])
 
         st.markdown("<h3></h3>", unsafe_allow_html=True)
-        result_value = locale.format("%d",prediction_df['Prediction'][0], grouping=True)
+        # result_value = locale.format("%d",prediction_df['Prediction'][0], grouping=True)
         # st.success(result_value, icon="💰")
         # st.success(prediction_df["Prediction"][0])
         st.write('$', prediction_df["Prediction"][0])
