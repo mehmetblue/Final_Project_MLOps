@@ -29,9 +29,6 @@ add_selectbox = st.sidebar.selectbox(
 st.sidebar.info('This app is created to predict Developers Salaries based on Stack Overflow 2018 Developers Survey')
 st.sidebar.image(image)
 
-# Adding the GitHub Repo link at the bottom of the sidebar
-st.sidebar.info('[Project GitHub Repo](https://github.com/mehmetblue/Final_Project_MLOps)')
-
 if add_selectbox == "Online":
     st.info("Please Input data below")
 
