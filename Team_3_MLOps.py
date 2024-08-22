@@ -37,8 +37,10 @@ st.sidebar.image(image)
 
 # Kaggle Notebook Link
 st.markdown("""
-You can access the Kaggle notebook by clicking [here](https://www.kaggle.com/code/fethullahceviz/so-2018-salary-prediction).
+[For Project Kaggle Notebook click](https://www.kaggle.com/code/fethullahceviz/so-2018-salary-prediction).
 """)
+
+st.markdown("<h3></h3>", unsafe_allow_html=True)
 
 if add_selectbox == "Online":
     st.info("Please Input Your Details Here")
