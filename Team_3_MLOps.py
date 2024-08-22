@@ -35,27 +35,12 @@ add_selectbox = st.sidebar.selectbox(
 st.sidebar.info('This app is created to predict Developers Salaries based on Stack Overflow 2018 Developers Survey')
 st.sidebar.image(image)
 
+# Kaggle Notebook Link
+st.markdown("""
+You can access the Kaggle notebook by clicking [here](https://www.kaggle.com/code/fethullahceviz/so-2018-salary-prediction).
+""")
+
 if add_selectbox == "Online":
-    
-   ##################################################
-
-    st.markdown("""
-    This Streamlit app is made to predict Developers Salaries based on Stack Overflow 2018 Developers Survey. The application is functional for both online prediction and batch data prediction. \n
-    """)
-    
-    st.markdown("""
-    You can access the project's Kaggle notebook by clicking on the logo here:
-    """)
-    
-    # SVG'yi HTML içinde gömme
-    st.markdown("""
-    <a href="https://www.kaggle.com/code/fethullahceviz/so-2018-salary-prediction" target="_blank">
-        <img src="kaggle_logo.svg" alt="Kaggle" style="width:200px;">
-    </a>
-    """, unsafe_allow_html=True)
-
-##################################################
-    
     st.info("Please Input Your Details Here")
 
     #Based on our optimal features selection
